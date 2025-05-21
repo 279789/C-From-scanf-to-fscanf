@@ -83,13 +83,13 @@ This assumes a file like `./assets/input.txt`.
 
 ## 3) Questions
 
-1. What is the difference between `scanf` and `fscanf`, and when would you use each?
+1. What is the difference between `scanf` and `fscanf`, and when would you use each? Scanf is used to read a string from stdin, wich is the keyboard buffer. with fscanf, you declare from where to read the string. If you have a programm, where an life interaction from an human beeing is needed, it would make sens to read from the keyboard. If you want to compare several files, it would make sens to read directly from the files. 
 
-2. How does `fscanf` generalize the behavior of `scanf`?
+2. How does `fscanf` generalize the behavior of `scanf`? The only difference between fscanf and scanf is, that you have an outher input, while scanf always uses stdin (Keyboardbuffer), fscanf is more flexible, it uses the input that you declare, wich also could be stdin.
 
-3. Why is it important to open files in the correct mode (`"r"`, `"w"`, etc.)?
+3. Why is it important to open files in the correct mode (`"r"`, `"w"`, etc.)? Thats important, because anything other than opening with the right mode wouldn't make any sens. For example, if you want to read data from a file, it wouldn't make any sens to open it in write mode right?
 
-4. What happens if the format string in `fscanf` doesn’t match the file contents?
+4. What happens if the format string in `fscanf` doesn’t match the file contents? It wouldn't understand the context, for example if you read a floating poit number it will read the number, because they're nothing other than ascii characters, but it wouldn't understand the spaces inbetween the dats.
 
 ## 4) Advice
 
